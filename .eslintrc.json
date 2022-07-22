@@ -20,5 +20,8 @@
 //    }],
     "operator-linebreak": "off",
     "comma-dangle": "off"
+  },
+  "globals": {
+    "process": "readonly"
   }
 }
