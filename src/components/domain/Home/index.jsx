@@ -17,6 +17,7 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 import Modal from '@/components/domain/Home/Modal';
 import characterData from '@/data/character.json';
+import Link from 'next/link';
 
 const Home = () => {
   const router = useRouter();
@@ -26,10 +27,9 @@ const Home = () => {
 
   const [isModalShow, setIsModalShow] = useState(false);
 
-  const pushQuizRoute = () => {
-    // router.push(`/quiz/${level}`);
-    router.push(`/0`);
-  };
+  // const pushQuizRoute = () => {
+  //   router.push(`/quiz/${level}`);
+  // };
   const showModal = () => {
     setIsModalShow(!isModalShow);
   };
@@ -57,9 +57,14 @@ const Home = () => {
             />
           </CharacterImageBox>
           <ButtonBox>
-            <StartButton onClick={pushQuizRoute}>
-              오늘의 퀴즈 풀러가기
-            </StartButton>
+            <Link
+              href={{
+                pathname: '/quiz/[quiz]',
+                query: { quiz: level },
+              }}
+            >
+              <StartButton>오늘의 퀴즈 풀러가기</StartButton>
+            </Link>
             <TutorialButton onClick={showModal}>
               튜토리얼 보러가기
             </TutorialButton>
