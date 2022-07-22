@@ -13,6 +13,7 @@ import {
 import ResultModal from '@/components/domain/Home/Modal/ResultModal';
 
 const Result = () => {
+  const [answer, setAnswer] = useState(0);
   const router = useRouter();
   const [isModalShow, setIsModalShow] = useState(false);
   const showModal = () => {
@@ -27,12 +28,15 @@ const Result = () => {
   return (
     <>
       <Container>
-        <ScoreImg src="/image/result/result0.svg" alt="result" />
+        <ScoreImg src={`/image/result/result${answer}.svg`} alt="result" />
         <ResultBox>
           <Description>
             햎희님은 총
             <br />
-            <NumberDescription>0문제 </NumberDescription>
+            <NumberDescription>
+              {answer}
+              문제{' '}
+            </NumberDescription>
             맞췄어요
           </Description>
           <AnswerButton onClick={showModal}>정답 보러가기</AnswerButton>
