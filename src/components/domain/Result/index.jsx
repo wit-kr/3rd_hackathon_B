@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import {
   AnswerButton,
   Container,
@@ -12,12 +13,16 @@ import {
 import ResultModal from '@/components/domain/Home/Modal/ResultModal';
 
 const Result = () => {
+  const router = useRouter();
   const [isModalShow, setIsModalShow] = useState(false);
   const showModal = () => {
     setIsModalShow(!isModalShow);
   };
   const closeModal = () => {
     setIsModalShow(false);
+  };
+  const pushHomeRoute = () => {
+    // router.push(`/home?current-user=${nickName}`)
   };
   return (
     <>
@@ -32,9 +37,7 @@ const Result = () => {
           </Description>
           <AnswerButton onClick={showModal}>정답 보러가기</AnswerButton>
         </ResultBox>
-        <Link href="/home">
-          <HomeButton>홈으로</HomeButton>
-        </Link>
+        <HomeButton onClick={pushHomeRoute}>홈으로</HomeButton>
       </Container>
       {isModalShow && <ResultModal onClose={closeModal} />}
     </>
