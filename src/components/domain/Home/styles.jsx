@@ -34,12 +34,14 @@ export const TextBox = styled.div`
 `;
 
 export const UserName = styled.span`
+  font-family: 'Jalnan';
   font-size: 3rem;
   line-height: 3rem;
   color: #fff;
 `;
 
 export const Description = styled.span`
+  font-family: 'Jalnan';
   font-size: 1.8rem;
   line-height: 3rem;
   color: #fff;

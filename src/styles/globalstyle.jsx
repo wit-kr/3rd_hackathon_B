@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
     min-width: 320px;
   }
   body{
-    font-family: AppleGothicNeoB, AppleSDGothicNeoEB, AppleSDGothicNeoH, AppleSDGothicNeoH, AppleSDGothicNeoL, AppleSDGothicNeoM;
+    font-family: AppleGothicNeoB, AppleSDGothicNeoEB, AppleSDGothicNeoH, AppleSDGothicNeoH, AppleSDGothicNeoL, AppleSDGothicNeoM, Jalnan;
     @supports (-webkit-touch-callout: none) {
       height: -webkit-fill-available;
     }
@@ -48,6 +48,11 @@ const GlobalStyle = createGlobalStyle`
     font-family: "AppleSDGothicNeoM";
     font-weight: 200;
     src: url("/fonts/AppleSDGothicNeoM.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Jalnan";
+    font-weight: 200;
+    src: url("/fonts/Jalnan.ttf") format("truetype");
   }
 `;
 
