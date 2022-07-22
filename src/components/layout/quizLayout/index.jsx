@@ -9,28 +9,35 @@ import Button from '@/components/layout/quizLayout/button';
 import ProgressBar from '@/components/layout/quizLayout/progressBar';
 
 const QuizLayout = ({ children }) => {
-  const [quiznumber, setQuiznumber] = useState(0);
   const [resultPage, setResultPage] = useState(false);
   const router = useRouter();
+  const currentUser = router.query['current-user'];
+  const level =
+      Number(process.browser && localStorage.getItem(currentUser)) ?? Number('1');
+  const {quiznumber} = router.query;
   const { right } = router.query;
   const { wrong } = router.query;
+  console.log("DDD"+level);
   const [active, setActive] = useState(false);
   const clickbutton = () => {
     if (quiznumber < 2) {
-      setQuiznumber(quiznumber + 1);
+      quiznumber=Number(quiznumber)+1;
     } else if (quiznumber == 2) {
       setResultPage(true);
-      setQuiznumber(quiznumber + 1);
+      quiznumber=Number(quiznumber)+1;
     } else {
       setResultPage(false);
-      setQuiznumber(0);
     }
-  };
-  useEffect(() => {
     router.push({
-      pathname: `/${quiznumber}`,
+      pathname: `/quiz/[quiz]`,
+      query: { quiz:level,quiznumber,right, wrong },
     });
-  }, [quiznumber]);
+  };
+  // useEffect(() => {
+  //   router.push({
+  //     pathname: `/quiz/1`,
+  //   });
+  // }, [quiznumber]);
   useEffect(() => {
     if (right == 'true' || wrong == 'true') {
       setActive(true);
@@ -43,7 +50,7 @@ const QuizLayout = ({ children }) => {
   return (
     <Container>
       {resultPage ? null : <ProgressBar quiznumber={quiznumber} />}
-      {resultPage ? <Result /> : children}
+      {children}
       <ButtonContainer>
         <Button
           active={active}

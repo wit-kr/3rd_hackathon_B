@@ -60,7 +60,7 @@ const Home = () => {
             <Link
               href={{
                 pathname: '/quiz/[quiz]',
-                query: { quiz: level },
+                query: { quiz: level,quiznumber:0,right:false,wrong:false },
               }}
             >
               <StartButton>오늘의 퀴즈 풀러가기</StartButton>
