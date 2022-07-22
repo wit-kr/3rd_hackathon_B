@@ -2,12 +2,12 @@ import {
     ContainerStyle,BarStyle
   } from '@/components/layout/quizLayout/progressBar/styles';
 
-const ProgressBar = () => {
+const ProgressBar = ({quiznumber}) => {
+    const quiz_count=["0","33%","66%","100%"];
+    console.log(quiznumber);
     return (
         <ContainerStyle>
-            <BarStyle>
-                10
-            </BarStyle>
+            <BarStyle quiz_count={quiz_count[quiznumber]} />
         </ContainerStyle>
     )
 }
