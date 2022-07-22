@@ -4,7 +4,9 @@ import {
   Content,
   Background,
   CloseButton,
+  ItemContainer,
 } from '@/components/domain/Home/Modal/styles';
+import Items from '@/components/domain/Home/Modal/Item';
 
 // eslint-disable-next-line react/prop-types
 const Modal = ({ onClose }) => (
@@ -12,11 +14,14 @@ const Modal = ({ onClose }) => (
     <Background onClick={onClose} />
     <Content>
       <Header>
-        <Title>ㅜ튜이토러</Title>
+        <Title>튜토리얼</Title>
         <CloseButton type="button" onClick={onClose}>
-          스 엑버튼
+          <img src="/image/close.svg" alt="close" />
         </CloseButton>
       </Header>
+      <ItemContainer>
+        <Items />
+      </ItemContainer>
     </Content>
   </>
 );
