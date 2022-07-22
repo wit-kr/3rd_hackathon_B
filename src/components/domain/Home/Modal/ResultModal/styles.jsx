@@ -43,3 +43,38 @@ export const ItemContainer = styled.div`
   justify-content: center;
   height: 100%;
 `;
+
+export const Item = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70vw;
+  max-width: 360px;
+  margin-bottom: 24px;
+`;
+
+export const AnswerTitle = styled.p`
+  font-family: 'AppleSDGothicNeoEB';
+  font-size: 1.4rem;
+  line-height: 3rem;
+  color: #34aa70;
+`;
+
+export const AnswerBox = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Question = styled.p`
+  font-family: 'AppleSDGothicNeo';
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #000;
+`;
+
+export const Answer = styled.p`
+  font-family: 'AppleSDGothicNeoL';
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #34aa70;
+`;
