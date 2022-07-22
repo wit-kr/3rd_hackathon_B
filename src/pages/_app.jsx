@@ -13,7 +13,7 @@ const MyApp = ({ Component, pageProps }) => {
         <meta content="#34aa70" name="msapplication-navbutton-color" />
         <meta content="#34aa70" name="apple-mobile-web-app-status-bar-style" />
         <meta content="yes" name="apple-mobile-web-app-capable" />
-        <title>title</title>
+        <title>하루그린</title>
       </Head>
       <GlobalStyle />
       <Component {...pageProps} />
