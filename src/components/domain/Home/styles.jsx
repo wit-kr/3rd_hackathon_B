@@ -13,8 +13,8 @@ export const TopBox = styled.div`
   background-color: #34aa70;
   border-radius: 0 0 30px 30px;
   width: 100%;
-  height: 48vh;
-  max-height: 440px;
+  height: 53vh;
+  max-height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,30 +60,12 @@ export const GradeTitle = styled.p`
   color: #fff;
 `;
 
-export const GradeBox = styled.div`
+export const ImageBox = styled.div`
   margin-top: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: white;
-  width: 83.3vw;
-  max-width: 400px;
-  height: 43.5vh;
-  max-height: 500px;
-  border-radius: 23px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
-  > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    border: 1px solid #85cca9;
-    width: 77.7vw;
-    max-width: 380px;
-    height: 41vh;
-  }
 `;
 
 export const ButtonBox = styled.div`
@@ -110,4 +92,10 @@ export const TutorialButton = styled.button`
   font-size: 1.2rem;
   color: #a0a0a0;
   text-decoration-line: underline;
+`;
+
+export const CharacterImage = styled.img`
+  width: 92vw;
+  max-height: 480px;
+  height: auto;
 `;
