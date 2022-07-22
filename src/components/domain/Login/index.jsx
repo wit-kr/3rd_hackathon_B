@@ -10,7 +10,7 @@ import {
   StartButton,
 } from '@/components/domain/Login/styles';
 import useInput from '@/hooks/useInput';
-import { NICKNAME } from '../../../utils/localstorageKey';
+import { NICKNAME } from '@/utils/localstorageKey';
 
 const Login = () => {
   const [nickName, onChangeNickname] = useInput('');
@@ -21,7 +21,7 @@ const Login = () => {
       e.preventDefault();
       // eslint-disable-next-line no-useless-return
       if (!nickName || !nickName.trim()) return;
-      localStorage.setItem(NICKNAME, JSON.stringify(nickName));
+      localStorage.setItem(NICKNAME, JSON.stringify(NICKNAME, nickName));
       router.push('/home');
     },
     [nickName],

@@ -15,7 +15,7 @@ import {
   TutorialButton,
   UserName,
 } from '@/components/domain/Home/styles';
-import { NICKNAME } from '../../../utils/localstorageKey';
+import { NICKNAME } from '@/utils/localstorageKey';
 
 const Home = () => {
   const [nickName, setNickname] = useState('');
