@@ -17,6 +17,12 @@ const GlobalStyle = createGlobalStyle`
   button {
     all: unset;
   }
+  form {
+    all: unset;
+  }
+  input {
+    all: unset;
+  }
 `;
 
 export default GlobalStyle;
