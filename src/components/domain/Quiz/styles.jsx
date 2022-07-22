@@ -64,7 +64,19 @@ export const QuizSelect = styled.div`
 `;
 
 export const Button = styled.button`
-  border:1px solid #E0E0E0;
+  ${props=>{
+    const selected = props.clickedornot;
+    if(selected){
+      return `
+        border:1px solid #34AA70;
+    `;
+    }
+    else{
+      return `
+        border:1px solid #E0E0E0;
+    `;
+    }
+  }}
   border-radius:50px;
   width:100%;
   height:50px;
