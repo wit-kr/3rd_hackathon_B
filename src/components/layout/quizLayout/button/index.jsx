@@ -1,9 +1,11 @@
 import { Container, Title } from '@/components/layout/quizLayout/button/styles';
 import { useEffect } from 'react';
-const Button = ({clickbutton}) => {
+const Button = ({quiznumber,clickbutton,resultPage}) => {
   return(
     <Container onClick={clickbutton}>
-    <Title>다음</Title>
+    {quiznumber<3?(<Title>다음</Title>)
+      :(resultPage?(<Title>홈으로</Title>)
+        :<Title>완료</Title>)}
   </Container>
   )
 }
