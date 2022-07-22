@@ -23,7 +23,6 @@ export const Header = styled.div`
 export const Title = styled.h1`
   font-family: 'AppleSDGothicNeoEB';
   font-size: 2.2rem;
-  line-height: 3rem;
   color: #34aa70;
 `;
 
