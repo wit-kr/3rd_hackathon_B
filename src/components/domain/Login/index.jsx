@@ -22,7 +22,7 @@ const Login = () => {
       if (!nickName || !nickName.trim()) return;
       const storedNickName = localStorage.getItem(nickName);
       if (!storedNickName) {
-        localStorage.setItem(nickName, '0');
+        localStorage.setItem(nickName, '1');
       }
       router.push(`/home?current-user=${nickName}`);
     },

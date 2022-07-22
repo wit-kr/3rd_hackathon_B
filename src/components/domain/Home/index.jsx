@@ -16,11 +16,13 @@ import {
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import Modal from '@/components/domain/Home/Modal';
+import characterData from '@/data/character.json';
 
 const Home = () => {
   const router = useRouter();
   const currentUser = router.query['current-user'];
-  const level = (process.browser && localStorage.getItem(currentUser)) ?? '0';
+  const level =
+    Number(process.browser && localStorage.getItem(currentUser)) ?? Number('1');
 
   const [isModalShow, setIsModalShow] = useState(false);
 
@@ -48,7 +50,10 @@ const Home = () => {
         </TopBox>
         <BottomBox>
           <CharacterImageBox>
-            <CharacterImage src="/image/characters/char1.svg" alt="character" />
+            <CharacterImage
+              src={`/image/characters/char${level}.svg`}
+              alt="character"
+            />
           </CharacterImageBox>
           <ButtonBox>
             <StartButton onClick={pushQuizRoute}>
