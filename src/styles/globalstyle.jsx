@@ -4,6 +4,7 @@ import { reset } from 'styled-reset';
 const GlobalStyle = createGlobalStyle`
   ${reset}
   html {
+    overflow: hidden;
     box-sizing: border-box;
     font-size: 62.5%;
     min-width: 320px;

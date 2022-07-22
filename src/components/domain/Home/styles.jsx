@@ -106,8 +106,10 @@ export const StartButton = styled.button`
 `;
 
 export const TutorialButton = styled.button`
+  font-family: 'AppleGothicNeoL';
   margin-top: 1.5vh;
   font-size: 1.2rem;
+  line-height: 1.6rem;
   color: #a0a0a0;
   text-decoration-line: underline;
 `;
