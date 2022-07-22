@@ -24,12 +24,14 @@ const Home = () => {
   const currentUser = router.query['current-user'];
   const level =
     Number(process.browser && localStorage.getItem(currentUser)) ?? Number('1');
+  console.log(typeof level);
 
   const [isModalShow, setIsModalShow] = useState(false);
 
-  // const pushQuizRoute = () => {
-  //   router.push(`/quiz/${level}`);
-  // };
+  const pushQuizRoute = () => {
+    router.push(`/quiz/${level}`);
+  };
+
   const showModal = () => {
     setIsModalShow(!isModalShow);
   };
@@ -57,14 +59,9 @@ const Home = () => {
             />
           </CharacterImageBox>
           <ButtonBox>
-            <Link
-              href={{
-                pathname: '/quiz/[quiz]',
-                query: { quiz: level },
-              }}
-            >
-              <StartButton>오늘의 퀴즈 풀러가기</StartButton>
-            </Link>
+            <StartButton onClick={pushQuizRoute}>
+              오늘의 퀴즈 풀러가기
+            </StartButton>
             <TutorialButton onClick={showModal}>
               튜토리얼 보러가기
             </TutorialButton>
