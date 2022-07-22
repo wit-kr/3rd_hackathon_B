@@ -21,7 +21,7 @@ const QuizLayout = ({ children }) => {
     <ProgressBar quiznumber={quiznumber} />
     {children}
     <ButtonContainer>
-      <Button clickbutton={clickbutton} />
+      <Button clickbutton={clickbutton} quiznumber={quiznumber}/>
     </ButtonContainer>
   </Container>
 )};
