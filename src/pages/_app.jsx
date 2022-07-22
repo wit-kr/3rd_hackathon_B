@@ -8,12 +8,15 @@ const MyApp = ({ Component, pageProps }) => {
   return getLayout(
     <>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=no"
+        />
         <meta content="#34aa70" name="theme-color" />
         <meta content="#34aa70" name="msapplication-navbutton-color" />
         <meta content="#34aa70" name="apple-mobile-web-app-status-bar-style" />
         <meta content="yes" name="apple-mobile-web-app-capable" />
-        <title>title</title>
+        <title>하루그린</title>
       </Head>
       <GlobalStyle />
       <Component {...pageProps} />
