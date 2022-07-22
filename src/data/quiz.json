@@ -1,0 +1,176 @@
+{
+    "quizList": [
+      {
+        "id": 1,
+        "content": "일회용 종이컵이나 플라스틱컵은 대부분 재활용이 된다",
+        "image": "/images/quizImg/quiz1.svg",
+        "answer":"false",
+        "solution":"X, 버려지는 일회용컵 중 재활용되는 비율은 단 1% 나머지는 소각되거나 매립된다"
+      },
+      {
+        "id": 2,
+        "content": "종이컵에 이물질이 뭍어있는 경우일반쓰레기로 버린다",
+        "image": "/images/quizImg/quiz2.svg",
+        "answer":"true",
+        "solution":"O, 종이컵 분리수거를 위해서는 이물질 없이 깨끗하게 제거 후에 말려 종이컵만 따로 모아서 분리수거 해야한다"
+      },
+      {
+        "id": 3,
+        "content": "플라스틱이 가장 많이 쓰이는 분야는 농업이다",
+        "image": "/images/quizImg/quiz3.svg",
+        "answer":"false",
+        "solution":"X, 플라스틱이 가장 많이 사용되는 용도는 포장 및 일회용품이다"
+      },
+      {
+        "id": 4,
+        "content": "종이봉투와 텀블러는 종이컵보다 환경보호에 도움이 된다",
+        "image": "/images/quizImg/quiz4.svg",
+        "answer":"false",
+        "solution":"O, 하지만 텀블러를 만들 때 배출되는 온실가스는 일회용 컵보다 훨씬 더 많기 때문에 소재에 따라 15-40회 이상 사용해야 일회용 컵을 사용하는 것보다 나은 효과를 얻을 수 있다"
+      },
+      {
+        "id": 5,
+        "content": "일회용 플라스틱컵은 썩는데 100년이 걸린다",
+        "image": "/images/quizImg/quiz5.svg",
+        "answer":"true",
+        "solution":"O, 매립된 플라스틱컵 한 개가 썩는 데는 100년이 걸린다"
+      },
+      {
+        "id": 6,
+        "content": "포장용 일회용 스티로폼이 썩는데 걸리는 시간은 50년이다",
+        "image": "/images/quizImg/quiz6.svg",
+        "answer":"false",
+        "solution":"X, 스티로폼이 썩는데에는 500년 이상 걸린다"
+      },
+      {
+        "id": 7,
+        "content": "화분은 일반쓰레기다",
+        "image": "/images/quizImg/quiz7.svg",
+        "answer":"true",
+        "solution":"O, 부피가 클 경우 대형 폐기물 신고 후 배출 수수료를 납부하고 배출해야 한다"
+      },
+      {
+        "id": 8,
+        "content": "세계에서 1인당 플라스틱 소비가 가장 많은 나라는 한국이다",
+        "image": "/images/quizImg/quiz8.svg",
+        "answer":"true",
+        "solution":"O, 2016년 기준 통계청에 따르면 국가별 연간 플라스틱 소비량은 일본(66.9kg), 프랑스(73kg), 미국(97.7kg) 을 제치고 한국이 1위(98.2)를 했다"
+      },
+      {
+        "id": 9,
+        "content": "고추장, 간장, 쌈장 등 장류는 음식물 쓰레기다",
+        "image": "/images/quizImg/quiz9.svg",
+        "answer":"false",
+        "solution":"X, 염분이 많은 장류는 음식물 쓰레기에 포함되지 않는다"
+      },
+      {
+        "id": 10,
+        "content": "미세플라스틱은 모든 바다의 영역에서 검출된다",
+        "image": "/images/quizImg/quiz10.svg",
+        "answer":"true",
+        "solution":"O, 미세 플라스틱은 해수, 해빙, 해저 퇴적물을 비롯해 바다의 모든 영역에서 검출된다"
+      },
+      {
+        "id": 11,
+        "content": "캔 음료는 최대한 작게 압축한 뒤 버려야한다",
+        "image": "/images/quizImg/quiz11.svg",
+        "answer":"false",
+        "solution":"X, 캔은 발로 밟아 납작하게 만들어서 버려야 한다고 알고 있지만, 크기를 너무 작게 만들면 재활용 선별장에서 분류되지 않을 수 있다"
+      },
+      {
+        "id": 12,
+        "content": "칫솔은 플라스틱 재활용 쓰레기다",
+        "image": "/images/quizImg/quiz12.svg",
+        "answer":"false",
+        "solution":"X, 칫솔은 플라스틱류가 아닌 일반 쓰레기로 분류해야 한다"
+      },
+      {
+        "id": 13,
+        "content": "나무젓가락이 썩는 데에는 최소 20년이 걸린다",
+        "image": "/images/quizImg/quiz13.svg",
+        "answer":"true",
+        "solution":"O, 나무젓가락이 썩는 데에는 최소 20년이 걸린다"
+      },
+      {
+        "id": 14,
+        "content": "도자기, 사기는 재활용 쓰레기다",
+        "image": "/images/quizImg/quiz14.svg",
+        "answer":"false",
+        "solution":"X, 유리그릇은 재활용이 되지만 도자기와 사기는 일반 쓰레기다"
+      },
+      {
+        "id": 15,
+        "content": "패스트푸드 음료컵의 뚜껑과 빨대는 모두 플라스틱에 포함된다",
+        "image": "/images/quizImg/quiz15.svg",
+        "answer":"false",
+        "solution":"X, 뚜껑은 플라스틱 , 빨대는 일반 쓰레기로 분리배출해야 한다"
+      },
+      {
+        "id": 16,
+        "content": "비닐봉투는 재활용이 가능하다",
+        "image": "/images/quizImg/quiz16.svg",
+        "answer":"true",
+        "solution":"O, 사실 비닐 봉투는 재사용을 위해 개발되었으나 많은 사람들이 일회용품으로 생각하고 그냥 버리고 있다"
+      },
+      {
+        "id": 17,
+        "content": "새우 껍질은 일반쓰레기로 분류해야한다",
+        "image": "/images/quizImg/quiz17.svg",
+        "answer":"true",
+        "solution":"O, 모든 갑각류의 껍질은 음식물이 아닌 일반쓰레기로 버려야한다"
+      },
+      {
+        "id": 18,
+        "content": "코팅된 종이는 일반쓰레기로 버려야 한다",
+        "image": "/images/quizImg/quiz18.svg",
+        "answer":"false",
+        "solution":"X, 종이가 찢어지는 정도면 종이류로 분리배출해도 괜찮다. 양면이 코팅된 종이는 재활용이 어려우니 이 때는 일반쓰레기로 배출해주면 된다"
+      },
+      {
+        "id": 19,
+        "content": "1톤의 재활용 종이는 나무 몇그루를 살리는가?",
+        "image": "/images/quizImg/quiz19.svg",
+        "answer":"22그루",
+        "otheranswer":["10그루","12그루","20그루","22그루"],
+        "solution":"22그루, 1톤의 재활용 종이는 약 22그루의 나무를 살린다"
+      },
+      {
+        "id": 20,
+        "content": "양념이 물든 플라스틱 용기는 전부 일반쓰레기다",
+        "image": "/images/quizImg/quiz20.svg",
+        "answer":"false",
+        "solution":"X, 용기에 음식물쓰레기가 남아 있지 않고, 기름기 등을 잘 세척해서 버린다면 약간의 얼룩은 문제가 없다"
+      },
+      {
+        "id": 21,
+        "content": "화장실에서 쓰는 페이퍼 타올이 썩는데 걸리는 시간은 1년이다.",
+        "image": "/images/quizImg/quiz21.svg",
+        "answer":"false",
+        "solution":"X, 페이퍼 타올이 분해되는데 걸리는 시간은 약 한달이다"
+      },
+      {
+        "id": 22,
+        "content": "일회용 라이터는 분리수거 대상이다",
+        "image": "/images/quizImg/quiz22.svg",
+        "answer":"false",
+        "solution":"X, 라이터는 불꽃이 튀게 되는 사고가 발생할 수 있으므로 반드시 종량제 봉투로 배출해야 한다"
+      },
+      {
+        "id": 23,
+        "content": "일회용 건전지는 일반 쓰레기로 배출해야 한다",
+        "image": "/images/quizImg/quiz23.svg",
+        "answer":"false",
+        "solution":"X, 망간, 아연, 철, 니켈 등의 물질이 매립 시에 토양과 지하수를 오염시킬 수 있다"
+      },
+      {
+        "id": 24,
+        "content": "한국이 1년에 사용하는 플라스틱 사용량은 몇 톤인가?",
+        "image": "/images/quizImg/quiz24.svg",
+        "answer":"50만톤",
+        "otheranswer":["30만톤 이상","40만톤 이상","50만톤 이상","60만톤 이상"],
+        "solution":"50만톤 이상, 한국이 1년에 사용하는 플라스틱 사용량은 약 50만톤 이상이다"
+      }
+    ]
+  }
+  
+  

@@ -2,14 +2,27 @@ import { Container,Picture,QuizContainer,QuizContent,QuizSelect,Detail,Button } 
 import {useEffect, useState} from 'react';
 import Link from 'next/link'
 import {useRouter} from 'next/router';
+import quizData from '../../../data/quiz.json';
 const Quiz = () => {
+    const quizList = quizData["quizList"];
     const router = useRouter();
+    console.log("dd"+quizList[0].quizImg);
     const quiznumber = router.query.quiz;
-    const [quizImg,setQuizImg] = useState([]);
+    const quizImg=[
+        // quizList[0+${level}*3].quizImg,
+        // quizList[1+${level}*3].quizImg,
+        // quizList[2+${level}*3].quizImg
+        quizList[0].quizImg,
+        quizList[1].quizImg,
+        quizList[2].quizImg,
+    ]
     const quiztext=[
-        "일회용 종이컵이나 플라스틱컵은 대부분 재활용이 된다.",
-        "종이컵에 이물질이 뭍어있는 경우 일반쓰레기로 버린다",
-        "플라스틱이 가장 많이 쓰이는 분야는 농업이다",
+        // quizList[0+${level}*3].content,
+        // quizList[1+${level}*3].content,
+        // quizList[2+${level}*3].content
+        quizList[0].content,
+        quizList[1].content,
+        quizList[2].content
     ];
     const [right,setRight] = useState(false);
     const [wrong,setWrong] = useState(false);
@@ -40,7 +53,8 @@ const Quiz = () => {
     },[quiznumber])
     return(
         <Container>
-            <Picture src={quizImg[quiznumber]} />
+            {/* <Picture src={quizImg[quiznumber]} /> */}
+            <Picture src={"/images/quizImg/quiz1.svg"} />
             <QuizContainer>
                 <QuizContent>
                     <text>{quiztext[quiznumber]}</text>
