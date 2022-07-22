@@ -50,24 +50,39 @@ export const LogoBox = styled.div`
   animation: ${LogoMove} 2s 1s both;
 `;
 
-export const StartButton = styled.button`
-  width: 83.3vw;
+export const DisabledStartButton = styled.button`
+  width: 100%;
   max-width: 400px;
   height: 50px;
   background-color: #fff;
   border-radius: 50px;
-  color: #34aa70;
   font-size: 1.8rem;
   text-align: center;
   margin-bottom: 9vh;
   animation: ${ButtonMove} 2s 1s both;
+  color: #a0a0a0;
+`;
+
+export const StartButton = styled.button`
+  width: 100%;
+  max-width: 400px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50px;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 9vh;
+  color: #34aa70;
 `;
 
 export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 38vh;
   color: #fff;
   width: 83.3vw;
   max-width: 400px;
-  border-bottom: 1px solid #fff;
   animation: ${FormMove} 2s 1s both;
 `;
 
@@ -75,6 +90,7 @@ export const Input = styled.input`
   color: #fff;
   font-size: 1.4rem;
   width: 100%;
+  border-bottom: 1px solid #fff;
   ::placeholder {
     color: #fff;
   }
