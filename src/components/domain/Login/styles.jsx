@@ -51,6 +51,7 @@ export const LogoBox = styled.div`
 `;
 
 export const DisabledStartButton = styled.button`
+  font-family: 'AppleSDGothicNeoEB';
   width: 100%;
   max-width: 400px;
   height: 50px;
@@ -64,6 +65,8 @@ export const DisabledStartButton = styled.button`
 `;
 
 export const StartButton = styled.button`
+  font-family: 'AppleSDGothicNeoEB';
+  font-weight: 400;
   width: 100%;
   max-width: 400px;
   height: 50px;
@@ -87,6 +90,7 @@ export const Form = styled.form`
 `;
 
 export const Input = styled.input`
+  font-family: 'AppleSDGothicNeoL';
   color: #fff;
   font-size: 1.4rem;
   width: 100%;

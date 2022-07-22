@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
     min-width: 320px;
   }
   body{
+    font-family: AppleGothicNeoB, AppleSDGothicNeoEB, AppleSDGothicNeoH, AppleSDGothicNeoH, AppleSDGothicNeoL, AppleSDGothicNeoM;
     @supports (-webkit-touch-callout: none) {
       height: -webkit-fill-available;
     }
@@ -22,6 +23,31 @@ const GlobalStyle = createGlobalStyle`
   }
   input {
     all: unset;
+  }
+  @font-face {
+    font-family: "AppleSDGothicNeoB";
+    font-weight: 200;
+    src: url("/fonts/AppleSDGothicNeoB.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "AppleSDGothicNeoEB";
+    font-weight: 200;
+    src: url("/fonts/AppleSDGothicNeoEB.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "AppleSDGothicNeoH";
+    font-weight: 200;
+    src: url("/fonts/AppleSDGothicNeoH.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "AppleSDGothicNeoL";
+    font-weight: 200;
+    src: url("/fonts/AppleSDGothicNeoL.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "AppleSDGothicNeoM";
+    font-weight: 200;
+    src: url("/fonts/AppleSDGothicNeoM.ttf") format("truetype");
   }
 `;
 
