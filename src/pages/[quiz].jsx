@@ -1,7 +1,8 @@
 import QuizLayout from '@/components/layout/quizLayout';
+import Quiz from '@/components/domain/Quiz';
 
-const Quiz = () => <div>quiz</div>;
+const QuizPage = () => <Quiz />;
 
-Quiz.getLayout = (page) => <QuizLayout>{page}</QuizLayout>;
+QuizPage.getLayout = (page) => <QuizLayout>{page}</QuizLayout>;
 
-export default Quiz;
+export default QuizPage;
