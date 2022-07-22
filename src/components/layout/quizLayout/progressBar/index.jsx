@@ -3,7 +3,7 @@ import {
   } from '@/components/layout/quizLayout/progressBar/styles';
 
 const ProgressBar = ({quiznumber}) => {
-    const quiz_count=["0","33%","66%","100%"];
+    const quiz_count=["33%","66%","100%"];
     console.log(quiznumber);
     return (
         <ContainerStyle>
