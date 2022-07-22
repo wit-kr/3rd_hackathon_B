@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react';
 import {
   BottomBox,
   ButtonBox,
+  CharacterImage,
+  CharacterImageBox,
   Container,
   Description,
   GradeBox,
@@ -33,9 +35,9 @@ const Home = () => {
         </TextBox>
       </TopBox>
       <BottomBox>
-        <GradeBox>
-          <div />
-        </GradeBox>
+        <CharacterImageBox>
+          <CharacterImage src="/image/characters/char1.svg" alt="character" />
+        </CharacterImageBox>
         <ButtonBox>
           <StartButton>오늘의 퀴즈 풀러가기</StartButton>
           <TutorialButton>튜토리얼 보러가기</TutorialButton>

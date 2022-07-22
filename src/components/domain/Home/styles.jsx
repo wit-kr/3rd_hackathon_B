@@ -13,8 +13,8 @@ export const TopBox = styled.div`
   background-color: #34aa70;
   border-radius: 0 0 30px 30px;
   width: 100%;
-  height: 53vh;
-  max-height: 400px;
+  height: 52vh;
+  max-height: 440px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,11 +32,13 @@ export const TextBox = styled.div`
 
 export const UserName = styled.span`
   font-size: 3rem;
+  line-height: 3rem;
   color: #fff;
 `;
 
 export const Description = styled.span`
   font-size: 1.8rem;
+  line-height: 3rem;
   color: #fff;
 `;
 
@@ -60,12 +62,18 @@ export const GradeTitle = styled.p`
   color: #fff;
 `;
 
-export const ImageBox = styled.div`
+export const CharacterImageBox = styled.div`
   margin-top: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+`;
+
+export const CharacterImage = styled.img`
+  width: 90vw;
+  max-width: 400px;
+  height: auto;
 `;
 
 export const ButtonBox = styled.div`
@@ -84,6 +92,7 @@ export const StartButton = styled.button`
   height: 6.4vh;
   color: #34aa70;
   font-size: 1.6rem;
+  line-height: 2.4rem;
   text-align: center;
 `;
 
@@ -92,10 +101,4 @@ export const TutorialButton = styled.button`
   font-size: 1.2rem;
   color: #a0a0a0;
   text-decoration-line: underline;
-`;
-
-export const CharacterImage = styled.img`
-  width: 92vw;
-  max-height: 480px;
-  height: auto;
 `;
