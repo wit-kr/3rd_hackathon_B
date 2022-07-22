@@ -1,7 +1,7 @@
-import Home from '@/components/domain/Home';
 import Layout from '@/components/layout/mainLayout';
+import Splash from '@/components/domain/Splash';
 
-const Main = () => <Home />;
+const Main = () => <Splash />;
 
 Main.getLayout = (page) => <Layout>{page}</Layout>;
 
