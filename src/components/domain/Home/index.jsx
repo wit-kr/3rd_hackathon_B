@@ -43,8 +43,8 @@ const Home = () => {
               {currentUser}님<Description> 반가워요</Description>
             </UserName>
             <Description>오늘도 환경에 한발짝 더 가까워져요</Description>
-            <GradeTitle>나의 등급</GradeTitle>
           </TextBox>
+          <GradeTitle>나의 등급</GradeTitle>
         </TopBox>
         <BottomBox>
           <CharacterImageBox>

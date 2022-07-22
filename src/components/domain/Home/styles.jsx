@@ -29,7 +29,7 @@ export const TextBox = styled.div`
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  width: 72vw;
+  width: 78vw;
   max-width: 360px;
 `;
 
@@ -62,7 +62,11 @@ export const BottomBox = styled.div`
 `;
 
 export const GradeTitle = styled.p`
+  width: 78vw;
+  max-width: 360px;
+  text-align: start;
   margin-top: 4.6vh;
+  margin-left: 15px;
   font-size: 1.8rem;
   color: #fff;
 `;
