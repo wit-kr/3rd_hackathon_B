@@ -22,7 +22,7 @@ const Home = () => {
   const currentUser = router.query['current-user'];
   const level = (process.browser && localStorage.getItem(currentUser)) ?? '0';
 
-  const [isModalShow, setIsModalShow] = useState(true);
+  const [isModalShow, setIsModalShow] = useState(false);
 
   const pushQuizRoute = () => {
     router.push(`/quiz/${level}`);
