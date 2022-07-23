@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useRecoilState } from 'recoil';
 import {
   AnswerButton,
   Container,
@@ -11,10 +12,13 @@ import {
   ResultBox,
 } from '@/components/domain/Result/styles';
 import ResultModal from '@/components/domain/Home/Modal/ResultModal';
+import { answerState } from '../../../atom/atom';
 
 const Result = () => {
-  const [answer, setAnswer] = useState(0);
+  const [answer, setAnswer] = useRecoilState(answerState);
+  console.log(answer);
   const router = useRouter();
+  const currentUser = router.query['current-user'];
   const [isModalShow, setIsModalShow] = useState(false);
   const showModal = () => {
     setIsModalShow(!isModalShow);
@@ -23,7 +27,7 @@ const Result = () => {
     setIsModalShow(false);
   };
   const pushHomeRoute = () => {
-    // router.push(`/home?current-user=${nickName}`)
+    router.push(`/home?current-user=${currentUser}`);
   };
   return (
     <>
@@ -31,7 +35,8 @@ const Result = () => {
         <ScoreImg src={`/image/result/result${answer}.svg`} alt="result" />
         <ResultBox>
           <Description>
-            햎희님은 총
+            {currentUser}
+            님은 총
             <br />
             <NumberDescription>
               {answer}
