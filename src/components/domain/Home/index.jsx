@@ -29,7 +29,7 @@ const Home = () => {
   const [isModalShow, setIsModalShow] = useState(false);
 
   const pushQuizRoute = () => {
-    router.push(`/quiz/${level}?current-user=${currentUser}/0`);
+    router.push(`/quiz/${level}/1?current-user=${currentUser}`);
   };
 
   const showModal = () => {

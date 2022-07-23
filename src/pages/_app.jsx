@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types,react/jsx-props-no-spreading */
 import Head from 'next/head';
+import { RecoilRoot } from 'recoil';
 import GlobalStyle from '@/styles/globalstyle';
 
 const MyApp = ({ Component, pageProps }) => {
@@ -19,7 +20,9 @@ const MyApp = ({ Component, pageProps }) => {
         <title>하루그린</title>
       </Head>
       <GlobalStyle />
-      <Component {...pageProps} />
+      <RecoilRoot>
+        <Component {...pageProps} />
+      </RecoilRoot>
     </>,
   );
 };
