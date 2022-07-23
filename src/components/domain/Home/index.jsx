@@ -18,13 +18,15 @@ import { useState } from 'react';
 import Modal from '@/components/domain/Home/Modal';
 import characterData from '@/data/character.json';
 import Link from 'next/link';
+import { useRecoilValue } from 'recoil';
+import { levelState } from '../../../atom/atom';
 
 const Home = () => {
   const router = useRouter();
   const currentUser = router.query['current-user'];
   const level =
     Number(process.browser && localStorage.getItem(currentUser)) ?? Number('1');
-  console.log(typeof level);
+  const tempLevel = useRecoilValue(levelState);
 
   const [isModalShow, setIsModalShow] = useState(false);
 
@@ -54,7 +56,7 @@ const Home = () => {
         <BottomBox>
           <CharacterImageBox>
             <CharacterImage
-              src={`/image/characters/char${level}.svg`}
+              src={`/image/characters/char${tempLevel}.svg`}
               alt="character"
             />
           </CharacterImageBox>
