@@ -12,11 +12,11 @@ import {
   ResultBox,
 } from '@/components/domain/Result/styles';
 import ResultModal from '@/components/domain/Home/Modal/ResultModal';
-import { answerState } from '../../../atom/atom';
+import { answerState, levelState } from '../../../atom/atom';
 
 const Result = () => {
   const [answer, setAnswer] = useRecoilState(answerState);
-  console.log(answer);
+  const [level, setLevel] = useRecoilState(levelState);
   const router = useRouter();
   const currentUser = router.query['current-user'];
   const [isModalShow, setIsModalShow] = useState(false);
@@ -29,6 +29,8 @@ const Result = () => {
   const pushHomeRoute = () => {
     router.push(`/home?current-user=${currentUser}`);
   };
+  setAnswer(3);
+  setLevel(2);
   return (
     <>
       <Container>

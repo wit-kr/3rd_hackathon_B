@@ -22,14 +22,15 @@ const Quiz = () => {
   const imagePath = level * 3 - (3 - id);
   const quiz = quizData?.quizList[id - 1];
 
+  if (level * 3 < id) {
+    router.push(`/quiz/result/?current-user=${currentUser}`);
+  }
+
   const setCorrect = () => {
     const nextQuiz = id + 1;
     if (quiz.solution.split(',')[0] === 'O') {
-      console.log('correct');
       setAnswer(answer + 1);
-    }
-    if (level * 3 < id) {
-      router.push(`/quiz/result/?current-user=${currentUser}`);
+      console.log(answer);
     }
     router.push(`/quiz/${level}/${nextQuiz}?current-user=${currentUser}`);
   };
@@ -38,9 +39,7 @@ const Quiz = () => {
     const nextQuiz = id + 1;
     if (quiz.solution.split(',')[0] === 'X') {
       setAnswer(answer + 1);
-    }
-    if (level * 3 < id) {
-      router.push(`/quiz/result/?current-user=${currentUser}`);
+      console.log(answer);
     }
     router.push(`/quiz/${level}/${nextQuiz}?current-user=${currentUser}`);
   };
@@ -50,7 +49,7 @@ const Quiz = () => {
       <QuizImage src={`/image/quiz/${imagePath}.svg`} />
       <QuizBox>
         <QuizQuestion>{quiz?.content}</QuizQuestion>
-        <Description>선택 후 다음을 눌러주세요</Description>
+        {/* <Description>선택 후 다음을 눌러주세요</Description> */}
       </QuizBox>
       <ButtonContainer>
         <Button onClick={setCorrect}>O</Button>
