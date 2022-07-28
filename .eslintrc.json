@@ -19,7 +19,9 @@
     "@next/next/no-img-element": "off",
     "no-unused-vars": "off",
     "react/jsx-one-expression-per-line": "off",
-    "import/order": "off"
+    "import/order": "off",
+    "object-curly-newline": "off",
+    "implicit-arrow-linebreak": "off"
   },
   "globals": {
     "process": "readonly"
