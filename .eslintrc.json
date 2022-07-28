@@ -3,6 +3,7 @@
     "browser": true,
     "es2021": true
   },
+  "parser": "@babel/eslint-parser",
   "extends": ["plugin:react/recommended", "airbnb", "plugin:import/recommended",  "plugin:@next/next/recommended"],
   "plugins": ["react", "@typescript-eslint", "prettier", "import"],
   "rules": {
@@ -12,14 +13,13 @@
     "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".js"] }],
     "import/no-unresolved": "off",
     "import/extensions": "off",
-//    "object-curly-newline": ["error", {
-//      "ObjectExpression": "always",
-//      "ObjectPattern": { "multiline": true },
-//      "ImportDeclaration": "never",
-//      "ExportDeclaration": { "multiline": true, "minProperties": 3 }
-//    }],
     "operator-linebreak": "off",
-    "comma-dangle": "off"
+    "comma-dangle": "off",
+    "import/prefer-default-export": "off",
+    "@next/next/no-img-element": "off",
+    "no-unused-vars": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "import/order": "off"
   },
   "globals": {
     "process": "readonly"

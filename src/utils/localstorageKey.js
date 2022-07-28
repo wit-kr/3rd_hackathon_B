@@ -1,1 +1,3 @@
-export const NICKNAME = 'NICKNAME';
+const NICKNAME = 'NICKNAME';
+
+export default NICKNAME;
