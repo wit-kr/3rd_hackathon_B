@@ -1,0 +1,25 @@
+{
+  "quizList": [
+    {
+      "id": 1,
+      "content": "화분은 일반쓰레기다",
+      "image": "/image/quiz/7.svg",
+      "answer":"true",
+      "solution":"O, 부피가 클 경우 대형 폐기물 신고 후 배출 수수료를 납부하고 배출해야 한다"
+    },
+    {
+      "id": 2,
+      "content": "세계에서 1인당 플라스틱 소비가 가장 많은 나라는 한국이다",
+      "image": "/image/quiz/8.svg",
+      "answer":"true",
+      "solution":"O, 2016년 기준 통계청에 따르면 국가별 연간 플라스틱 소비량은 일본(66.9kg), 프랑스(73kg), 미국(97.7kg) 을 제치고 한국이 1위(98.2)를 했다"
+    },
+    {
+      "id": 3,
+      "content": "고추장, 간장, 쌈장 등 장류는 음식물 쓰레기다",
+      "image": "/image/quiz/9.svg",
+      "answer":"false",
+      "solution":"X, 염분이 많은 장류는 음식물 쓰레기에 포함되지 않는다"
+    }
+  ]
+}

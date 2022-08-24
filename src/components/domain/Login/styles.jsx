@@ -59,7 +59,7 @@ export const DisabledStartButton = styled.button`
   border-radius: 50px;
   font-size: 1.8rem;
   text-align: center;
-  margin-bottom: 9vh;
+  margin-bottom: 70px;
   animation: ${ButtonMove} 2s 1s both;
   color: #a0a0a0;
 `;
@@ -74,7 +74,7 @@ export const StartButton = styled.button`
   border-radius: 50px;
   font-size: 1.8rem;
   text-align: center;
-  margin-bottom: 9vh;
+  margin-bottom: 70px;
   color: #34aa70;
 `;
 
@@ -82,7 +82,7 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 38vh;
+  height: 250px;
   color: #fff;
   width: 83.3vw;
   max-width: 400px;

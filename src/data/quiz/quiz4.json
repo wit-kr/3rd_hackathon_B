@@ -1,0 +1,25 @@
+{
+  "quizList": [
+    {
+      "id": 1,
+      "content": "미세플라스틱은 모든 바다의 영역에서 검출된다",
+      "image": "/image/quiz/10.svg",
+      "answer":"true",
+      "solution":"O, 미세 플라스틱은 해수, 해빙, 해저 퇴적물을 비롯해 바다의 모든 영역에서 검출된다"
+    },
+    {
+      "id": 2,
+      "content": "캔 음료는 최대한 작게 압축한 뒤 버려야한다",
+      "image": "/image/quiz/11.svg",
+      "answer":"false",
+      "solution":"X, 캔은 발로 밟아 납작하게 만들어서 버려야 한다고 알고 있지만, 크기를 너무 작게 만들면 재활용 선별장에서 분류되지 않을 수 있다"
+    },
+    {
+      "id": 3,
+      "content": "칫솔은 플라스틱 재활용 쓰레기다",
+      "image": "/image/quiz/12.svg",
+      "answer":"false",
+      "solution":"X, 칫솔은 플라스틱류가 아닌 일반 쓰레기로 분류해야 한다"
+    }
+  ]
+}

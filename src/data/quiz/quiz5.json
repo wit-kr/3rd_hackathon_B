@@ -1,0 +1,25 @@
+{
+  "quizList": [
+    {
+      "id": 1,
+      "content": "나무젓가락이 썩는 데에는 최소 20년이 걸린다",
+      "image": "/image/quiz/13.svg",
+      "answer":"true",
+      "solution":"O, 나무젓가락이 썩는 데에는 최소 20년이 걸린다"
+    },
+    {
+      "id": 2,
+      "content": "도자기, 사기는 재활용 쓰레기다",
+      "image": "/image/quiz/14.svg",
+      "answer":"false",
+      "solution":"X, 유리그릇은 재활용이 되지만 도자기와 사기는 일반 쓰레기다"
+    },
+    {
+      "id": 3,
+      "content": "패스트푸드 음료컵의 뚜껑과 빨대는 모두 플라스틱에 포함된다",
+      "image": "/image/quiz/15.svg",
+      "answer":"false",
+      "solution":"X, 뚜껑은 플라스틱 , 빨대는 일반 쓰레기로 분리배출해야 한다"
+    }
+  ]
+}

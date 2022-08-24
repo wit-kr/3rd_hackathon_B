@@ -1,0 +1,25 @@
+{
+  "quizList": [
+    {
+      "id": 1,
+      "content": "비닐봉투는 재활용이 가능하다",
+      "image": "/image/quiz/16.svg",
+      "answer":"true",
+      "solution":"O, 사실 비닐 봉투는 재사용을 위해 개발되었으나 많은 사람들이 일회용품으로 생각하고 그냥 버리고 있다"
+    },
+    {
+      "id": 2,
+      "content": "새우 껍질은 일반쓰레기로 분류해야한다",
+      "image": "/image/quiz/17.svg",
+      "answer":"true",
+      "solution":"O, 모든 갑각류의 껍질은 음식물이 아닌 일반쓰레기로 버려야한다"
+    },
+    {
+      "id": 3,
+      "content": "코팅된 종이는 일반쓰레기로 버려야 한다",
+      "image": "/image/quiz/18.svg",
+      "answer":"false",
+      "solution":"X, 종이가 찢어지는 정도면 종이류로 분리배출해도 괜찮다. 양면이 코팅된 종이는 재활용이 어려우니 이 때는 일반쓰레기로 배출해주면 된다"
+    }
+  ]
+}

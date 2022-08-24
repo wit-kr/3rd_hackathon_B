@@ -17,6 +17,7 @@ export const TopBox = styled.div`
   border-radius: 0 0 30px 30px;
   width: 100%;
   height: 52vh;
+  //height: 400px;
   max-height: 440px;
   display: flex;
   flex-direction: column;
@@ -24,7 +25,8 @@ export const TopBox = styled.div`
 `;
 
 export const TextBox = styled.div`
-  margin-top: 5.8vh;
+  //margin-top: 5.8vh;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -65,7 +67,8 @@ export const GradeTitle = styled.p`
   width: 78vw;
   max-width: 360px;
   text-align: start;
-  margin-top: 4.6vh;
+  //margin-top: 4.6vh;
+  margin-top: 30px;
   margin-left: 15px;
   font-size: 1.8rem;
   color: #fff;
@@ -89,7 +92,8 @@ export const ButtonBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10vh;
+  //margin-bottom: 10vh;
+  margin-bottom: 80px;
 `;
 
 export const StartButton = styled.button`
@@ -98,7 +102,8 @@ export const StartButton = styled.button`
   border-radius: 50px;
   width: 55.5vw;
   max-width: 300px;
-  height: 6.4vh;
+  //height: 6.4vh;
+  height: 50px;
   color: #34aa70;
   font-size: 1.6rem;
   line-height: 2.4rem;
