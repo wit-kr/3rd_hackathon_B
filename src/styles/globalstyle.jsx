@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
     min-width: 320px;
   }
   body{
+    overflow: hidden;
     font-family: AppleGothicNeoB, AppleSDGothicNeoEB, AppleSDGothicNeoH, AppleSDGothicNeoH, AppleSDGothicNeoL, AppleSDGothicNeoM, Jalnan;
     @supports (-webkit-touch-callout: none) {
       height: -webkit-fill-available;
