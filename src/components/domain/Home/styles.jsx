@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   z-index: 99;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   @supports (-webkit-touch-callout: none) {
     height: -webkit-fill-available;
   }
