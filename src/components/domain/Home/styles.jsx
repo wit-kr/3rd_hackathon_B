@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   z-index: 99;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   @supports (-webkit-touch-callout: none) {
     height: -webkit-fill-available;
   }
@@ -15,8 +15,9 @@ export const TopBox = styled.div`
   background-color: #34aa70;
   border-radius: 0 0 30px 30px;
   width: 100%;
-  height: 52vh;
-  max-height: 440px;
+  height: 380px;
+  //height: 52vh;
+  //max-height: 440px;
   display: flex;
   flex-direction: column;
   align-items: center;
