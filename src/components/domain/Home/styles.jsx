@@ -15,8 +15,8 @@ export const TopBox = styled.div`
   background-color: #34aa70;
   border-radius: 0 0 30px 30px;
   width: 100%;
-  height: 380px;
-  //height: 52vh;
+  //height: 380px;
+  height: 52vh;
   //max-height: 440px;
   display: flex;
   flex-direction: column;

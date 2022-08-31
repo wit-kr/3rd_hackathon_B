@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body{
     overflow: hidden;
+    touch-action: none;
     font-family: AppleGothicNeoB, AppleSDGothicNeoEB, AppleSDGothicNeoH, AppleSDGothicNeoH, AppleSDGothicNeoL, AppleSDGothicNeoM, Jalnan;
     @supports (-webkit-touch-callout: none) {
       height: -webkit-fill-available;

@@ -2,8 +2,38 @@
 import Head from 'next/head';
 import { RecoilRoot } from 'recoil';
 import GlobalStyle from '@/styles/globalstyle';
+import { useEffect } from 'react';
 
 const MyApp = ({ Component, pageProps }) => {
+  useEffect(() => {
+    const removeEvent = (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+    };
+
+    const disableScroll = () => {
+      document
+        .querySelector('body')
+        .removeEventListener('touchmove', removeEvent);
+      document.querySelector('body').addEventListener('onclick', removeEvent);
+      document
+        .querySelector('body')
+        .addEventListener('mousewheel', removeEvent);
+    };
+    disableScroll();
+
+    // const enableScroll = () => {
+    //   document
+    //     .querySelector('body')
+    //     .removeEventListener('touchmove', removeEvent);
+    //   document
+    //     .querySelector('body')
+    //     .removeEventListener('onclick', removeEvent);
+    //   document
+    //     .querySelector('body')
+    //     .removeEventListener('mousewheel', removeEvent);
+    // };
+  }, []);
   const getLayout = Component.getLayout || ((page) => page);
 
   return getLayout(
@@ -23,7 +53,7 @@ const MyApp = ({ Component, pageProps }) => {
       <RecoilRoot>
         <Component {...pageProps} />
       </RecoilRoot>
-    </>,
+    </>
   );
 };
 

@@ -14,7 +14,7 @@ import {
   UserName,
 } from '@/components/domain/Home/styles';
 import { useRouter } from 'next/router';
-import { useState } from 'react';
+import { useEffect, useState } from "react";
 import Modal from '@/components/domain/Home/Modal';
 import characterData from '@/data/character.json';
 import Link from 'next/link';
@@ -22,6 +22,7 @@ import { useRecoilValue } from 'recoil';
 import { levelState } from '../../../atom/atom';
 
 const  Home = () => {
+
   const router = useRouter();
   const currentUser = router.query['current-user'];
   const level =
