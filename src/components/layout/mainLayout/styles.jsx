@@ -1,9 +1,13 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  max-width: 500px;
+  max-width: 430px;
   height: 100vh;
   @supports (-webkit-touch-callout: none) {
     height: -webkit-fill-available;

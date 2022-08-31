@@ -5,7 +5,6 @@ export const Container = styled.div`
   flex-direction: column;
   z-index: 99;
   width: 100%;
-  max-width: 500px;
   height: 100vh;
   @supports (-webkit-touch-callout: none) {
     height: -webkit-fill-available;
@@ -17,7 +16,6 @@ export const TopBox = styled.div`
   border-radius: 0 0 30px 30px;
   width: 100%;
   height: 52vh;
-  //height: 400px;
   max-height: 440px;
   display: flex;
   flex-direction: column;
@@ -25,28 +23,34 @@ export const TopBox = styled.div`
 `;
 
 export const TextBox = styled.div`
-  //margin-top: 5.8vh;
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  width: 78vw;
-  max-width: 360px;
 `;
 
 export const UserName = styled.span`
   font-family: 'Jalnan';
-  font-size: 3rem;
+  font-size: 2.8rem;
   line-height: 3rem;
   color: #fff;
+  @media (max-width: 300px) {
+    font-size: 1.9rem;
+  }
 `;
 
 export const Description = styled.span`
   font-family: 'Jalnan';
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   line-height: 3rem;
   color: #fff;
+  @media (min-width: 400px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 300px) {
+    font-size: 1.2rem;
+  }
 `;
 
 export const BottomBox = styled.div`
@@ -64,18 +68,14 @@ export const BottomBox = styled.div`
 `;
 
 export const GradeTitle = styled.p`
-  width: 78vw;
-  max-width: 360px;
-  text-align: start;
-  //margin-top: 4.6vh;
-  margin-top: 30px;
-  margin-left: 15px;
+  width: 100%;
+  margin-top: 40px;
   font-size: 1.8rem;
   color: #fff;
 `;
 
 export const CharacterImageBox = styled.div`
-  margin-top: 20vh;
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,7 +92,6 @@ export const ButtonBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  //margin-bottom: 10vh;
   margin-bottom: 80px;
 `;
 
@@ -100,14 +99,16 @@ export const StartButton = styled.button`
   bottom: 0;
   border: 1px solid #34aa70;
   border-radius: 50px;
-  width: 55.5vw;
-  max-width: 300px;
-  //height: 6.4vh;
+  width: 200px;
   height: 50px;
   color: #34aa70;
   font-size: 1.6rem;
   line-height: 2.4rem;
   text-align: center;
+  @media (min-width: 400px) {
+    width: 230px;
+    font-size: 1.8rem;
+  }
 `;
 
 export const TutorialButton = styled.button`
