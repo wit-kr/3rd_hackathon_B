@@ -75,7 +75,7 @@ export const StartButton = styled.button`
   font-size: 1.8rem;
   text-align: center;
   margin-bottom: 70px;
-  color: #34aa70;
+  color: ${(props) => props.fontColor};
 `;
 
 export const Form = styled.form`
@@ -94,6 +94,7 @@ export const Input = styled.input`
   color: #fff;
   font-size: 1.4rem;
   width: 100%;
+  max-width: 400px;
   border-bottom: 1px solid #fff;
   ::placeholder {
     color: #fff;
