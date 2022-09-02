@@ -38,6 +38,7 @@ const  Home = () => {
   const showModal = () => {
     setIsModalShow(!isModalShow);
   };
+
   const closeModal = () => {
     setIsModalShow(false);
   };
