@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { useCallback } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/router';
 import {
   Container,
@@ -13,6 +13,7 @@ import useInput from '@/hooks/useInput';
 
 const Login = () => {
   const [nickName, onChangeNickname] = useInput('');
+  const [fontColor, setFontColor] = useState('#a0a0a0');
   const router = useRouter();
 
   const onSubmit = useCallback(
@@ -26,8 +27,14 @@ const Login = () => {
       }
       router.push(`/home?current-user=${nickName}`);
     },
-    [nickName],
+    [nickName]
   );
+
+  useEffect(() => {
+    if (nickName.trim()) {
+      setFontColor('#34aa70');
+    } else setFontColor('#a0a0a0');
+  }, [nickName]);
 
   return (
     <Container>
@@ -42,15 +49,22 @@ const Login = () => {
           value={nickName}
           onChange={onChangeNickname}
         />
-        {!nickName || !nickName.trim() ? (
-          <DisabledStartButton type="submit" disabled={nickName}>
-            시작하기
-          </DisabledStartButton>
-        ) : (
-          <StartButton type="submit" style={{ color: '#34aa70' }}>
-            시작하기
-          </StartButton>
-        )}
+        <StartButton type="submit" fontColor={fontColor}>
+          시작하기
+        </StartButton>
+        {/* {!nickName || !nickName.trim() ? ( */}
+        {/*  <DisabledStartButton */}
+        {/*    type="submit" */}
+        {/*    disabled={nickName} */}
+        {/*    animation={animation} */}
+        {/*  > */}
+        {/*    시작하기 */}
+        {/*  </DisabledStartButton> */}
+        {/* ) : ( */}
+        {/*  <StartButton type="submit" style={{ color: '#34aa70' }}> */}
+        {/*    시작하기 */}
+        {/*  </StartButton> */}
+        {/* )} */}
       </Form>
     </Container>
   );

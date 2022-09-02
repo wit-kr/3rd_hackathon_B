@@ -7,7 +7,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 430px;
+  max-width: 450px;
   height: 100vh;
   @supports (-webkit-touch-callout: none) {
     height: -webkit-fill-available;
