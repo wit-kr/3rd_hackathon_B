@@ -1,4 +1,5 @@
 import {
+  Wrapper,
   Title,
   Header,
   Content,
@@ -10,7 +11,7 @@ import Items from '@/components/domain/Home/Modal/Item';
 
 // eslint-disable-next-line react/prop-types
 const Modal = ({ onClose }) => (
-  <>
+  <Wrapper>
     <Background onClick={onClose} />
     <Content>
       <Header>
@@ -23,7 +24,7 @@ const Modal = ({ onClose }) => (
         <Items />
       </ItemContainer>
     </Content>
-  </>
+  </Wrapper>
 );
 
 export default Modal;

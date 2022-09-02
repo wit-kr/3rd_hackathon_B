@@ -1,10 +1,18 @@
 import styled from 'styled-components';
 
+export const Wrapper = styled.div`
+  position: absolute;
+  z-index: 999;
+  left: 50%;
+  transform: translateX(-50%);
+  height: calc(100vh - 100px);
+`;
+
 export const Content = styled.div`
   position: absolute;
   width: 72vw;
-  max-width: 380px;
-  height: 64vh;
+  max-width: 300px;
+  height: 420px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -28,9 +36,9 @@ export const Title = styled.h1`
 `;
 
 export const Background = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
+  //position: absolute;
+  //top: 0;
+  //left: 0;
   width: 100vw;
   height: 100vh;
   background-color: black;
