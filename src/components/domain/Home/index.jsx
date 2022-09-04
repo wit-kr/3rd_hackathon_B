@@ -22,7 +22,6 @@ import { useRecoilValue } from 'recoil';
 import { levelState } from '../../../atom/atom';
 
 const  Home = () => {
-
   const router = useRouter();
   const currentUser = router.query['current-user'];
   const level =
